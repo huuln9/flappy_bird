@@ -6,31 +6,54 @@ class Bird extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 100,
-      height: 100,
-      child: Image.asset("assets/images/bird.png"),
+      width: 130,
+      height: 130,
+      child: Padding(
+        padding: EdgeInsets.zero,
+        child: Stack(
+          // mainAxisAlignment: MainAxisAlignment.center,
+          // crossAxisAlignment: CrossAxisAlignment.center,
+          children: const [
+            BirdHead(),
+            Positioned(
+              bottom: 10,
+              left: 10,
+              child: BirdBody(),
+            ),
+          ],
+        ),
+      ),
+    );
+    // return SizedBox(
+    //   width: 100,
+    //   height: 100,
+    //   child: Image.asset("assets/images/bird.png"),
+    // );
+  }
+}
+
+class BirdHead extends StatelessWidget {
+  const BirdHead({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 80,
+      height: 80,
+      child: Image.asset("assets/images/4aa0aa26d85e1c00454f.jpg"),
     );
   }
 }
 
-// class BirdHead extends StatelessWidget {
-//   const BirdHead({Key? key}) : super(key: key);
+class BirdBody extends StatelessWidget {
+  const BirdBody({Key? key}) : super(key: key);
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return Image.asset("assets/images/bird.png");
-//   }
-// }
-
-// class BirdBody extends StatelessWidget {
-//   const BirdBody({Key? key}) : super(key: key);
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return SizedBox(
-//       width: 50,
-//       height: 50,
-//       child: Image.asset("assets/images/huy_oc_cho_minh.png"),
-//     );
-//   }
-// }
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 50,
+      height: 50,
+      child: Image.asset("assets/images/huy_oc_cho_minh.png"),
+    );
+  }
+}
