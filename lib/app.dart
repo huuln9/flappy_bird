@@ -82,9 +82,12 @@ class _AppState extends State<App> {
   }
 
   void startGame() {
+    double speed = -3; // -4.9
+    double idx = 2; // 2.8
+
     gameHasStarted = true;
     Timer.periodic(const Duration(milliseconds: 50), (timer) {
-      height = -4.9 * time * time + 2.8 * time;
+      height = speed * time * time + idx * time;
       setState(() {
         birdY = initialHeight - height;
       });

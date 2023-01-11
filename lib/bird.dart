@@ -15,11 +15,11 @@ class Bird extends StatelessWidget {
           // crossAxisAlignment: CrossAxisAlignment.center,
           children: const [
             BirdHead(),
-            Positioned(
-              bottom: 10,
-              left: 10,
-              child: BirdBody(),
-            ),
+            // Positioned(
+            //   bottom: 10,
+            //   left: 10,
+            //   child: BirdBody(),
+            // ),
           ],
         ),
       ),
@@ -40,7 +40,7 @@ class BirdHead extends StatelessWidget {
     return SizedBox(
       width: 80,
       height: 80,
-      child: Image.asset("assets/images/4aa0aa26d85e1c00454f.jpg"),
+      child: Image.asset("assets/images/thui.png"),
     );
   }
 }
