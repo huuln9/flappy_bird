@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset("assets/images/bird.png"),
+          Image.asset("lib/images/bird.png"),
           const Text(
             "C O N  C H I M  H U  H O N G",
             style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
@@ -31,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
             icon: const Icon(Icons.play_arrow),
             label: const Text("P L A Y"),
             style: TextButton.styleFrom(
-              primary: Colors.white,
+              foregroundColor: Colors.white,
               backgroundColor: Colors.redAccent.shade700,
               padding: const EdgeInsets.all(15),
               shadowColor: Colors.black,
@@ -40,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
           ),
           const Padding(padding: EdgeInsets.symmetric(vertical: 16)),
           // const Text(
-          //   "game ngu n` hon tai huusumo.com",
+          //   "game ngu n` hon tai hwxsumo.com",
           //   style: TextStyle(color: Colors.white),
           // ),
         ],

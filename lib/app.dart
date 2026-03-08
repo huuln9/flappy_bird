@@ -234,7 +234,7 @@ class _AppState extends State<App> {
                       icon: const Icon(Icons.arrow_back),
                       label: const Text("Back"),
                       style: TextButton.styleFrom(
-                        primary: Colors.white,
+                        foregroundColor: Colors.white,
                         padding: const EdgeInsets.all(30),
                         shape: const CircleBorder(),
                       ),

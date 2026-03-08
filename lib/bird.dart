@@ -40,7 +40,7 @@ class BirdHead extends StatelessWidget {
     return SizedBox(
       width: 80,
       height: 80,
-      child: Image.asset("assets/images/thui.png"),
+      child: Image.asset("lib/images/huy_oc_cho.png"),
     );
   }
 }
@@ -53,7 +53,7 @@ class BirdBody extends StatelessWidget {
     return SizedBox(
       width: 50,
       height: 50,
-      child: Image.asset("assets/images/huy_oc_cho_minh.png"),
+      child: Image.asset("lib/images/huy_oc_cho_minh.png"),
     );
   }
 }
